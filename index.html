@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Kalkulator BMI</h1>
+            <div class="display">
+                <!-- Menampilkan Jenis Kelamin/ Gender -->
+                <div class="input">
+                <label for="gender">Jenis Kelamin</label>
+                <select class="gender-select">
+                    <option>Pria</option>
+                    <option>Wanita</option>
+                </select>
+                <div class="underline"></div>
+                <!-- <label> Gender</label> -->
+          
+                <br>
+                <!-- Mengimputkan Usia, TB, BB  -->
+                <div class="input">
+                <label for="usia">Usia(Tahun)</label>
+                <input type="number" id="Usia">
+                </div>
+                <div class="input">
+                <label for="Tinggi">Tinggi(cm)</label>
+                <input type="number" id="Tinggi">
+                </div>
+                <div class="input">
+                <label for="Berat">Berat(kg)</label>
+                <input type="number" id="Berat">
+            </div>
+            <!-- Membuat Buttom Eksekusi BMI -->
+            <button id="hitung">Hitung BMI</button>
+            </div>
+            <div class="hasil" >
+                <center>
+                <p >Hasil BMI Kamu</p>
+                <div id="hasil">00.00</div>
+                <p class="comment"></p>
+                </center>
+            </div>
+        </div>
+    </div>
+    
+         <script src="JS/script.js"></script>
+</body>
+</html>
